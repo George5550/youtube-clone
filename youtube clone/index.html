@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> youtube clone</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+         
+
+        <!-----nav bar------>  
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="img/menu.png" alt="" class="menu-icon">
+            <img src="img/logo.png" alt="" class="logo">
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="search-box flex-div">
+                <input type="text" placeholder="ძიება">
+                <img src="img/search.png" alt="">
+            </div>
+            <img src="img/voice-search.png" alt="" class="mic-icon">
+
+        </div>
+        <div class="nav-right flex-div">
+            <img src="img/upload.png" alt="">
+            <img src="img/more.png" alt="">
+            <img src="img/notification.png" alt="">
+            <img src="img/gio.jpg" alt="" class="user-icon">
+        </div>
+    </nav>
+
+
+    <!----------slidebar------>
+    <div class="slidebar">
+        <div class="shortcut-links">
+            <a href=""><img src="img/home.png" alt=""><p>მთავარი</p></a>
+            <a href=""><img src="img/explore.png" alt=""><p>აღმოჩენა</p></a>
+            <a href=""><img src="img/subscriprion.png" alt=""><p>გამოწერა</p></a>
+            <a href=""><img src="img/library.png" alt=""><p>ბიბლიოთეკა</p></a>
+            <a href=""><img src="img/history.png" alt=""><p>ისტორია</p></a>
+            <a href=""><img src="img/playlist.png" alt=""><p>დასაკრავი სია</p></a>
+            <a href=""><img src="img/messages.png" alt=""><p>შეტყობინებები</p></a>
+            <a href=""><img src="img/show-more.png" alt=""><p>ჩვენება-მეტი</p></a>
+            <hr>
+        </div>
+        <div class="subscibed-list">
+            <h3>SUBSCRIBED</h3>
+            <a href=""><img src="img/gio.jpg" alt=""><p>merkviladze</p></a>
+            <a href=""><img src="img/simon.png" alt=""><p>Simon Bake</p></a>
+            <a href=""><img src="img/tom.png" alt=""><p>Tom Hardy</p></a>
+            <a href=""><img src="img/megan.png" alt=""><p>Megan Ryan</p></a>
+            <a href=""><img src="img/cameron.png" alt=""><p>Cameron Diaz</p></a>
+        </div>
+    </div>
+
+    <!---------main---------->
+    <div class="container">
+        <div class="banner">
+            <img src="https://repository-images.githubusercontent.com/332880944/4ac93f80-6318-11eb-8c43-d2f24192ce27" alt="">
+        </div>
+           
+        <div class="list-container">
+            <div class="vid-list">
+                <a href="play-video.html"><img src="https://news.blr.com/app/uploads/sites/3/2018/09/TDA_010617-5.jpg" alt="" class="thumbanail"></a>
+                <div class="flex-div">
+                    <img src="img/gio.jpg" alt="">
+                    <div class="vid-info">
+                        <a href="play-video.html">საუკეთესო Chanel კოდირების შესასწავლად, რომელიც დაგეხმარებათ იყოთ ვებ დეველოპერი</a>
+                        <p>Giorgi Merkviladze</p>
+                        <p>15 ათასი ნახვა</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="vid-list">
+                <a href="ddd.html"><img src="data:image/jpeg;base64,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" alt="" class="thumbanail"></a>
+                <div class="flex-div">
+                    <img src="img/gio.jpg" alt="">
+                    <div class="vid-info">
+                        <a href="ddd.html">საუკეთესო Chanel კოდირების შესასწავლად, რომელიც დაგეხმარებათ იყოთ ვებ დეველოპერი</a>
+                        <p>Giorgi Merkviladze</p>
+                        <p>15 ათასი ნახვა</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="vid-list">
+                <a href="dr.html"><img src="https://img4.goodfon.com/wallpaper/nbig/e/5c/computer-codding-coding-programing.jpg" alt="" class="thumbanail"></a>
+                <div class="flex-div">
+                    <img src="img/gio.jpg" alt="">
+                    <div class="vid-info">
+                        <a href="dr.html">საუკეთესო Chanel კოდირების შესასწავლად, რომელიც დაგეხმარებათ იყოთ ვებ დეველოპერი</a>
+                        <p>Giorgi Merkviladze</p>
+                        <p>15 ათასი ნახვა</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="vid-list">
+                <a href="aa.html"><img src="https://static2.bigstockphoto.com/8/9/3/large2/398339531.jpg" alt="" class="thumbanail"></a>
+                <div class="flex-div">
+                    <img src="img/gio.jpg" alt="">
+                    <div class="vid-info">
+                        <a href="aa.html">საუკეთესო Chanel კოდირების შესასწავლად, რომელიც დაგეხმარებათ იყოთ ვებ დეველოპერი</a>
+                        <p>Giorgi Merkviladze</p>
+                        <p>15 ათასი ნახვა</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="vid-list">
+                <a href="mm.html"><img src="data:image/jpeg;base64,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" alt="" class="thumbanail"></a>
+                <div class="flex-div">
+                    <img src="img/gio.jpg" alt="">
+                    <div class="vid-info">
+                        <a href="mm.html">საუკეთესო Chanel კოდირების შესასწავლად, რომელიც დაგეხმარებათ იყოთ ვებ დეველოპერი</a>
+                        <p>Giorgi Merkviladze</p>
+                        <p>15 ათასი ნახვა</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="vid-list">
+                <a href="mnn.html"><img src="https://jfiaffe.files.wordpress.com/2014/09/no.jpg" alt="" class="thumbanail"></a>
+                <div class="flex-div">
+                    <img src="img/gio.jpg" alt="">
+                    <div class="vid-info">
+                        <a href="mnn.html">საუკეთესო Chanel კოდირების შესასწავლად, რომელიც დაგეხმარებათ იყოთ ვებ დეველოპერი</a>
+                        <p>Giorgi Merkviladze</p>
+                        <p>15 ათასი ნახვა</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="vid-list">
+                <a href="nn.html"><img src="https://thumbs.dreamstime.com/b/codding-operation-programmer-discussing-neon-glow-icon-illustration-light-sign-vector-glowing-bright-transparent-symbol-221165832.jpg" alt="" class="thumbanail"></a>
+                <div class="flex-div">
+                    <img src="img/gio.jpg" alt="">
+                    <div class="vid-info">
+                        <a href="nn.html">საუკეთესო Chanel კოდირების შესასწავლად, რომელიც დაგეხმარებათ იყოთ ვებ დეველოპერი</a>
+                        <p>Giorgi Merkviladze</p>
+                        <p>15 ათასი ნახვა</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vid-list">
+                <a href="video.html"><img src="https://thumbs.dreamstime.com/b/programmer-coding-laptop-neon-glow-icon-illustration-light-sign-vector-glowing-bright-transparent-symbol-220038083.jpg" alt="" class="thumbanail"></a>
+                <div class="flex-div">
+                    <img src="img/gio.jpg" alt="">
+                    <div class="vid-info">
+                        <a href="video.html">საუკეთესო Chanel კოდირების შესასწავლად, რომელიც დაგეხმარებათ იყოთ ვებ დეველოპერი</a>
+                        <p>Giorgi Merkviladze</p>
+                        <p>15 ათასი ნახვა</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vid-list">
+                <a href=""><img src="img/thumbnail8.png" alt="" class="thumbanail"></a>
+                <div class="flex-div">
+                    <img src="img/gio.jpg" alt="">
+                    <div class="vid-info">
+                        <a href="">საუკეთესო Chanel კოდირების შესასწავლად, რომელიც დაგეხმარებათ იყოთ ვებ დეველოპერი</a>
+                        <p>Giorgi Merkviladze</p>
+                        <p>15 ათასი ნახვა</p>
+                    </div>
+                </div>
+            </div>
+    
+    
+                <div class="vid-list">
+                    <a href=""><img src="img/thumbnail7.png" alt="" class="thumbanail"></a>
+                    <div class="flex-div">
+                        <img src="img/gio.jpg" alt="">
+                        <div class="vid-info">
+                            <a href="">საუკეთესო Chanel კოდირების შესასწავლად, რომელიც დაგეხმარებათ იყოთ ვებ დეველოპერი</a>
+                            <p>Giorgi Merkviladze</p>
+                            <p>15 ათასი ნახვა</p>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="vid-list">
+                    <a href=""><img src="img/thumbnail6.png" alt="" class="thumbanail"></a>
+                    <div class="flex-div">
+                        <img src="img/gio.jpg" alt="">
+                        <div class="vid-info">
+                            <a href="">საუკეთესო Chanel კოდირების შესასწავლად, რომელიც დაგეხმარებათ იყოთ ვებ დეველოპერი</a>
+                            <p>Giorgi Merkviladze</p>
+                            <p>15 ათასი ნახვა</p>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="vid-list">
+                    <a href=""><img src="img/thumbnail5.png" alt="" class="thumbanail"></a>
+                    <div class="flex-div">
+                        <img src="img/gio.jpg" alt="">
+                        <div class="vid-info">
+                            <a href="">საუკეთესო Chanel კოდირების შესასწავლად, რომელიც დაგეხმარებათ იყოთ ვებ დეველოპერი</a>
+                            <p>Giorgi Merkviladze</p>
+                            <p>15 ათასი ნახვა</p>
+                        </div>
+                    </div>
+                </div>
+    
+    
+    
+                <div class="vid-list">
+                    <a href=""><img src="img/thumbnail4.png" alt="" class="thumbanail"></a>
+                    <div class="flex-div">
+                        <img src="img/gio.jpg" alt="">
+                        <div class="vid-info">
+                            <a href="">საუკეთესო Chanel კოდირების შესასწავლად, რომელიც დაგეხმარებათ იყოთ ვებ დეველოპერი</a>
+                            <p>Giorgi Merkviladze</p>
+                            <p>15 ათასი ნახვა</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="vid-list">
+                    <a href=""><img src="img/thumbnail3.png" alt="" class="thumbanail"></a>
+                    <div class="flex-div">
+                        <img src="img/gio.jpg" alt="">
+                        <div class="vid-info">
+                            <a href="">საუკეთესო Chanel კოდირების შესასწავლად, რომელიც დაგეხმარებათ იყოთ ვებ დეველოპერი</a>
+                            <p>Giorgi Merkviladze</p>
+                            <p>15 ათასი ნახვა</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="vid-list">
+                    <a href=""><img src="img/thumbnail2.png" alt="" class="thumbanail"></a>
+                    <div class="flex-div">
+                        <img src="img/gio.jpg" alt="">
+                        <div class="vid-info">
+                            <a href="">საუკეთესო Chanel კოდირების შესასწავლად, რომელიც დაგეხმარებათ იყოთ ვებ დეველოპერი</a>
+                            <p>Giorgi Merkviladze</p>
+                            <p>15 ათასი ნახვა</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vid-list">
+                    <a href=""><img src="img/foto2.png" alt="" class="thumbanail"></a>
+                    <div class="flex-div">
+                        <img src="img/gio.jpg" alt="">
+                        <div class="vid-info">
+                            <a href="">საუკეთესო Chanel კოდირების შესასწავლად, რომელიც დაგეხმარებათ იყოთ ვებ დეველოპერი</a>
+                            <p>Giorgi Merkviladze</p>
+                            <p>15 ათასი ნახვა</p>
+                        </div>
+                    </div>
+                </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="scrypt.js"></script>
+</body>
+</html>
